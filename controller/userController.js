@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
-// const SECRET_KEY = process.env.SECRET_KEY;
-const SECRET_KEY = "xyz";
-const userModel = require("/Users/ishika/Downloads/Aveksha-master/model/userModel.js");
+const SECRET_KEY = process.env.SECRET_KEY;
+// const SECRET_KEY = "xyz";
+const userModel = require("../userModel");
 
 async function signup(req, res) {
   try {
