@@ -1,5 +1,5 @@
 const express = require("express");
-const { signup, login, logout, updateDetails, makeAdmin, updateProfilePhoto, getAllUser, changeAccess, removeAccess } = require("/Users/ishika/Downloads/Aveksha-master/controller/userController.js");
+const { signup, login, logout, updateDetails, makeAdmin, updateProfilePhoto, getAllUser, changeAccess, removeAccess } = require("../userController");
 const userRouter = express.Router();
 
 userRouter.post("/signup", signup );
