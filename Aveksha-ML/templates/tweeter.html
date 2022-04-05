@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/Abouts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+  <title>About</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="logo dj a">AVEKSHA</div>
+      <div class="nav-btn ">
+        <ul>
+          {% if isLoggedin == 0 %}
+          <li><a class="" href="https://aveksha.herokuapp.com/">Home</a></li>
+          <li><a class="" href="https://aveksha.herokuapp.com/contact">Contact</a></li>
+          <li><a class="" href="https://aveksha.herokuapp.com/login">Login</a></li>
+          {% endif %}
+          {% if isLoggedin == 1 %}
+          <li><a class="" href="https://aveksha.herokuapp.com/stats">Statistics</a></li>
+          <li><a class="" href="https://aveksha.herokuapp.com/about">About</a></li>
+          <li><a class="" href="https://aveksha.herokuapp.com/contact">Contact</a></li>
+          <li><a class="" href="https://aveksha.herokuapp.com/user/logout">Logout</a></li>
+
+          {% endif %}
+        </ul>
+      </div>
+      <div class="burger-nav">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="nav-btn-slide ">
+      <ul>
+        {% if isLoggedin == 0 %}
+        <li><a class="" href="https://aveksha.herokuapp.com/">Home</a></li>
+        <li><a class="" href="https://aveksha.herokuapp.com/contact">Contact</a></li>
+        <li><a class="" href="https://aveksha.herokuapp.com/login">Login</a></li>
+        {% endif %}
+        {% if isLoggedin == 1 %}
+        <li><a class="" href="https://aveksha.herokuapp.com/stats">Statistics</a></li>
+        <li><a class="" href="https://aveksha.herokuapp.com/about">About</a></li>
+        <li><a class="" href="https://aveksha.herokuapp.com/contact">Contact</a></li>
+        <li><a class="" href="https://aveksha.herokuapp.com/user/logout">Logout</a></li>
+
+        {% endif %}
+      </ul>
+    </div>
+
+  </div>
+  <div class="load">
+    <h1>Statistics</h1>
+    <div class="close"></div>
+    <form method="POST" action="https://avekshaml.herokuapp.com/">
+      <label for="lat">Latitude</label>
+      <input type="text" name="city1" id="lat">
+      <label for="long">Longitude</label>
+      <input type="text" name="city2" id="long">
+      <div class="mess" style="font-weight: 600; color: red;"></div>
+      <input type="submit" value="Submit" class="submit">
+    </form>
+  </div>
+  <div class="welcome">
+    <h1>Statistics</h1>
+    <h2 class="change">Change Location</h2>
+
+    <div class="about">
+      <p>
+        Every 30s a woman receives a toxic tweet* <br>Above picture depicts the most
+        common bad words that have been used in tweets against the women
+      </p>
+      <img src={{ url1 }} alt="Chart" height="542" width="542">
+    </div>
+    <div class="graph">
+
+      <img src={{ url2 }} alt="0000">
+    </div>
+    
+    <div class="lists">
+      <p>{{ Top_Users }}</p>
+      <table>
+        <thead>
+
+          <tr>
+            {% for col in column_names %}
+            <th>
+
+              {{col}}
+
+            </th>
+            {% endfor %}
+          </tr>
+
+        </thead>
+        <tbody>
+          {% for row in row_data %}
+          <tr>
+            {% for col, row_ in zip(column_names, row) %}
+            <td>{{row_}}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+
+  </div>
+  <div class="footer">
+    &copy; Aveksha 2021
+  </div>
+  <script src="../static/aboutScript.js"></script>
+</body>
+
+</html>

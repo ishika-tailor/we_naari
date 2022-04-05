@@ -1,0 +1,19 @@
+.loadingAnime {
+  height: 94vh;
+  background: white;
+  justify-content: center;
+  align-items: center;
+
+}
+
+svg {
+  height: 10em;
+  transform: rotate(-60deg);
+  color: black;
+  animation: 3s linear 0s infinite rotate;
+}
+
+@keyframes rotate {
+  from {transform: rotate(-60deg)}
+  to {transform: rotate(300deg)}
+}

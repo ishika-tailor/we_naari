@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="static\about.css">
+<body>
+    <header>
+        <div class="container">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="About.html">ABOUT</a></li>
+              <li><a href="Creators.html">CREATORS</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+   
+    <div >
+    <br> 
+    <br> 
+    <h1 class="f"><center> TWITTER TODAY
+    </center></h1>
+
+    <br>
+    <form method ="POST" action="/">
+      <input type="text" name="city1" placeholder="city1">
+      <input type="text" name="city2" placeholder="city2">
+      <input type="submit">
+    </form>
+    <p>{{ Top_Users }}</p>
+    <table>
+      <thead>
+
+        <tr>
+          {% for col in column_names %}
+          <th>
+          
+            {{col}}
+           
+          </th>
+          {% endfor %}
+        </tr>
+
+      </thead>
+      <tbody>
+        {% for row in row_data %}
+        <tr>
+          {% for col, row_ in zip(column_names, row) %}
+          <td>{{row_}}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+
+       
+      </tbody>
+
+    </table>
+    <img src={{ url1 }} alt="Chart" height="542" width="542">
+    <img src={{ url2 }} alt="Chart" height="542" width="542">
+    
+
+</body>
+

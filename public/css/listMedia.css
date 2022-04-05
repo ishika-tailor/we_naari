@@ -1,0 +1,48 @@
+@media only screen and (orientation:landscape) and (max-width:730px){
+    button {
+        height: 22%;
+        width: 74%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:1025px){
+button {
+    height: 23%;
+    width: 53%;
+}
+}
+@media only screen and (orientation:landscape) and (max-width:825px){
+button {
+    height: 26%;
+    width: 68%;
+}
+}
+@media only screen and (orientation:landscape) and (max-width:740px){
+button {
+    height: 26%;
+    width: 73%;
+}
+}
+@media only screen and (orientation:landscape) and (max-width:670px){
+    button {
+        height: 29%;
+        width: 80%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:570px){
+    button {
+        height: 29%;
+        width: 89%;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:770px){
+    button {
+        height: 22%;
+        width: 70%;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:550px){
+    button {
+        height: 22%;
+        width: 93%;
+    }
+}

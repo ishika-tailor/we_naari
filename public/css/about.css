@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.welcome {
+    min-height: 100vh;
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-top: 5%;
+    background-image: url(/Images/safety.png);
+    background-repeat: no-repeat;
+    background-position: -52% 56%;
+    background-size: 110%;
+    background-color: #E9F5FD;
+    color: #282E49;
+}
+
+.welcome h1, .welcome h2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.welcome h3 {
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.div2, .div3, .div4, .div5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.image2 {
+    background-image: url(/Images/women.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 69%;
+    width: 40%;
+    margin-top: 5%;
+    background-size: contain;
+    background-position: center;
+}
+
+.content2, .content3, .content4, .content5 {
+    max-width: 35%;
+}
+
+.content2 h1, .content3 h1, .content4 h1, .content5 h1 {
+    color: #282E49;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.content2 p, .content3 p, .content4 p, .content5 p {
+    color: #282E49;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.image3 {
+    background-image: url(/Images/societyshaming.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+    background-position: center;
+}
+
+.image4 {
+    background-image: url(/Images/portrait-style-girl-young-women-fashion-with-plants-1737919-1479023.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 65%;
+    width: 29%;
+    background-position: center;
+}
+
+.image5 {
+    background-image: url(/Images/goodToUse.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 73%;
+    width: 40%;
+    background-position: center;
+}
+
+hr {
+    border-top: 10px double;
+    border-color: gray;
+    width: 90%;
+    margin: auto;
+}
+
+.team {
+    min-width: 100%;
+    min-height: 600px;
+    margin-top: 25px;
+    padding-top: 40px;
+}
+
+.team .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.team .head {
+    font-size: 50px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.footer{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+  }
+.member {
+    width: 25%;
+    height: 500px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 15px;
+    transition: 1s;
+    position: relative;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.cnt {
+    font-size: 150px;
+    font-weight: 600;
+    color: gainsboro;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    z-index: -1;
+}
+
+.name {
+    font-size: xx-large;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.member img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team .wrap .member:nth-child(2) img {
+    width: 150px;
+}
+
+.links i {
+    font-size: x-large;
+    color: black;
+    margin: 30px 10px;
+}

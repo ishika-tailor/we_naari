@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stats.css">
+  <link rel="stylesheet" href="/css/statsMedia.css">
+  <link rel="stylesheet" href="/css/loading.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"></script>
+  <title>About</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="logo dj a">WE-NAARI</div>
+      <div class="nav-btn ">
+          <ul>
+              <% if(isLoggedin==0 ) {%>
+                  <li><a class="" href="/">Home</a></li>
+                  <li><a class="" href="/contact">Contact</a></li>
+                  <li><a class="" href="/login">Login</a></li>
+
+                  <%}else{%>
+                      <li><a class="" href="/stats">Statistics</a></li>
+                      <li><a class="" href="/profile">Profile</a></li>
+                      <% if(isLoggedin == 2) {%>
+                      <li><a class="" href="/list">Authorization List</a></li>
+                      <% } %>
+                      <li><a class="" href="/contact">Contact</a></li>
+                  <li><a class="" href="/user/logout">Logout</a></li>
+
+                      <%}%>
+          </ul>
+      </div>
+      <div class="burger-nav">
+          <i class="fas fa-bars"></i>
+      </div>
+  </div>
+  <div class="nav-btn-slide ">
+      <ul>
+          <% if(isLoggedin==0 ) {%>
+              <li><a class="" href="/">Home</a></li>
+              <li><a class="" href="/contact">Contact</a></li>
+              <li><a class="" href="/login">Login</a></li>
+
+              <%}else{%>
+                  <li><a class="" href="/stats">Statistics</a></li>
+                      <li><a class="" href="/profile">Profile</a></li>
+                      <% if(isLoggedin == 2) {%>
+                      <li><a class="" href="/list">Authorization List</a></li>
+                      <% } %>
+                      <li><a class="" href="/contact">Contact</a></li>
+                  <li><a class="" href="/user/logout">Logout</a></li>
+
+                  <%}%>
+      </ul>
+  </div>
+
+
+  </div>
+  <div class="load">
+    <h1>Statistics</h1>
+    <div class="close"></div>
+    <form>
+      <select name="" id="state">
+        <option value="Select">Select</option>
+        <option value="15.9129 79.7400">Andhra Pradesh</option>
+        <option value="28.2180 94.7278">Arunachal Pradesh</option>
+        <option value="26.2006 92.9376">Assam</option>
+        <option value="25.0961 85.3131">Bihar</option>
+        <option value="21.2787 81.8661">Chhattisgarh</option>
+        <option value="28.7041 77.1025">Delhi</option>
+        <option value="15.2993 74.1240">Goa</option>
+        <option value="22.2587 71.1924">Gujarat</option>
+        <option value="29.0588 76.0856">Haryana</option>
+        <option value="31.1048 77.1734">Himachal Pradesh</option>
+        <option value="23.6102 85.2799">Jharkhand</option>
+        <option value="15.3173 75.7139">Karnataka</option>
+        <option value="10.8505 76.2711">Kerala</option>
+        <option value="22.9734 78.6569">Madhya Pradesh</option>
+        <option value="19.7515 75.7139">Maharashtra</option>
+        <option value="24.6637 93.9063">Manipur</option>
+        <option value="25.4670 91.3662">Meghalaya</option>
+        <option value="23.1645 92.9376">Mizoram</option>
+        <option value="26.1584 94.5624">Nagaland</option>
+        <option value="20.9517 85.0985">Odisha</option>
+        <option value="31.1471 75.3412">Punjab</option>
+        <option value="27.0238 74.2179">Rajasthan</option>
+        <option value="27.5330 88.5122">Sikkim</option>
+        <option value="11.1271 78.6569">Tamil Nadu</option>
+        <option value="18.1124 79.0193">Telangana</option>
+        <option value="23.9408 91.9882">Tripura</option>
+        <option value="30.0668 79.0193">Uttarakhand</option>
+        <option value="26.8467 80.9462">Uttar Pradesh</option>
+        <option value="22.9868 87.8550">West Bengal</option>
+        <option value="Other" >Other</option>
+      </select>
+      <label for="lat" class="lat">Latitude</label>
+      <input type="text" name="city1" id="lat">
+      <label for="long" class=" long">Longitude</label>
+      <input type="text" name="city2" id="long">
+      <div class="mess" style="font-weight: 600; color: red;"></div>
+      <div class="submit">Submit</div>
+    </form>
+  </div>
+  <div class="loadingAnime">
+    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="spinner-third"
+      class="svg-inline--fa fa-spinner-third fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z">
+      </path>
+    </svg>
+
+  </div>
+
+
+  
+  <div class="welcome">
+    <h1>Statistics</h1>
+    <h2 class="change">Change Location</h2>
+
+    <div class="about">
+      <p>
+        Every 30 second a woman receives a toxic tweet* <br>Above picture depicts the most
+        common bad words that have been used in tweets against the women
+      </p>
+    </div>
+    <div class="graph">
+
+    </div>
+    <% if(role=="admin" ){%>
+      <div class="lists">
+        <div class="headings">
+          <h3>Username</h3>
+          <h3>Location</h3>
+          <h3>HashTags</h3>
+          <h3>Tweet</h3>
+        </div>
+      </div>
+      <%}%>
+
+  </div>
+  <div class="footer">
+    &copy; WE-NAARI 2022
+  </div>
+  <script src="/Js/script.js"></script>
+  <script src="/Js/logo.js"></script>
+</body>
+
+</html>

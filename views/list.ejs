@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+    <title>Access</title>
+    <link rel="stylesheet" href="/css/list.css">
+    <link rel="stylesheet" href="/css/listMedia.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="nav-bar">
+            <div class="logo dj a">WE-NAARI</div>
+            <div class="nav-btn ">
+                <ul>
+                    <% if(isLoggedin==0 ) {%>
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        <%}else{%>
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            <%}%>
+                </ul>
+            </div>
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/login">Login</a></li>
+
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                        <%}%>
+            </ul>
+        </div>
+
+        <h1><span class="blue"></span><span class="blue"></span> <span class="yellow">Authorization</pan>
+        </h1>
+
+        <table class="container">
+            <thead>
+                <tr>
+                    <th>
+                        <h1>Name</h1>
+                    </th>
+                    <th>
+                        <h1>Email</h1>
+                    </th>
+                    <th>
+                        <h1>Designation</h1>
+                    </th>
+                    <th>
+                        <h1>Access</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        &copy; WE-NAARI 2022
+      </div>
+    <script src="/Js/list.js"></script>
+    <script src="/Js/header.js"></script>
+    <script src="/Js/logo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/aboutMedia.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <!-- <link rel="stylesheet" href="/public/css/header.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>About</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo dj a">WE-NAARI</div>
+            <div class="nav-btn ">
+                <ul>
+                    <% if(isLoggedin==0 ) {%>
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        <%}else{%>
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            <%}%>
+                </ul>
+            </div>
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/login">Login</a></li>
+
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                        <%}%>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="welcome">
+        <h1>Welcome To</h1>
+        <h2>WE-NAARI</h2>
+        <h3>Every Thought Matter.</h3>
+
+    </div>
+    <div class="work">
+
+        <div class="div2">
+            <div class="image2"></div>
+            <div class="content2">
+                <h1>Women safety</h1>
+                <p>Violence and discrimination can blight women’s lives and hold them back from playing a full part in
+                    the workplace, society
+                    and the economy. WE-NAARI is taking
+                    action to improve women’s rights and safety in the communities in
+                    which we operate.</p>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="content3">
+                <h1>No more society shaming</h1>
+                <p>Abuse on Twitter can include general nastiness or name calling.
+                     It can be more targeted harassment or can be more direct
+                    threats. Our team will do their best
+                    to find the culprit behind the dirty tweets !</p>
+            </div>
+            <div class="image3"></div>
+        </div>
+        <div class="div4">
+            <div class="image4"></div>
+            <div class="content4">
+                <h1>Zero tolerance of harassment</h1>
+                <p>We tried to revise and evolve our codes in order to address
+                    specific forms of
+                    harassment, including policies covering sexual harassment against
+                    women.</p>
+            </div>
+        </div>
+        <div class="div5">
+            <div class="content5">
+                <h1>No more Ignominy</h1>
+                <p>The most beautiful thing a woman can wear is confidence. Don't
+                    let her loose it by your social media games.</p>
+            </div>
+            <div class="image5"></div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="team">
+        <div class="head">Team</div>
+        <div class="wrap">
+            <div class="member">
+                <!-- <div class="cnt">00</div> -->
+                <img src="/Images/ishika.jpg" alt="">
+                <div class="name"> Ishika Tailor </div>
+                <div class="about">I am a Sophomore at Guru Gobind Singh Indraprastha University, B.Tech CSE.I am an
+                    engineering student working on
+                    web applications
+
+                    and web infrastructure with intrest in backend development. </div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/architgarg603/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/architgarg603" target="_blank" ><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="member">
+                <!-- <div class="cnt">01</div> -->
+                <img src="/Images/kathan.jpg" alt="">
+                <div class="name"> Kathan Vakharia</div>
+                <div class="about">I am a Sophomore at IGDTUW, B.Tech IT. Passionate front-end web developer
+                    with
+                    experience using JavaScript, HTML5, and CSS to build all aspects of the user experience
+                    for
+                    client-facing landing pages.</div>
+                    <div class="links">
+                    <a href="https://www.linkedin.com/in/nishtha-goyal-12a7871b6" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Nishtha0801" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+
+            <!-- <div class="member">
+                <div class="cnt">03</div>
+                <img src="/Images/ABHI.jpg" alt="">
+                <div class="name">Abhigya Verma</div>
+                <div class="about">I am a Sophomore at IGDTUW, B.Tech IT. 'Learning By Doing' has always been
+                    my mantra.
+                    As a result, I am a believer who believes in the power of Artificial Intelligence to
+                    revolutionize
+                    the world.</div>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/abhigya02/" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/abhi27-web" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+            </div> -->
+        </div>
+        <div class="footer">
+            &copy; WE-NAARI 2022
+          </div>
+    </div>
+    <script src="/Js/header.js"></script>
+    <script src="/Js/logo.js"></script>
+</body>
+
+</html>

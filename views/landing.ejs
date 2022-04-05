@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WE-NAARI</title>
+        <link rel="stylesheet" href="/css/landing.css">
+        <link rel="stylesheet" href="/css/landingQuery.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <ul>
+                    <li>About WE-NAARI</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="wrap">
+                <br>
+                <h1>>Empowering <br><span></span></h1>
+
+                
+                <h3><span> Wo Badhengi,Desh Badhega !</span></h3>
+                <% if( isLoggedin == 0 ) {%>
+                <div class="btns">
+                    <div class="loginbtn">Login</div>
+                    <div class="registerbtn">Sign Up</div>
+                </div>
+                <% }else{ %>
+                <div class="btns">
+                    <div class="loginbtn">Profile</div>
+                    <div class="registerbtn">Statistics</div>
+                </div>
+                    <% } %>
+            </div>
+        </div>
+    
+        <script src="/Js/landing.js"></script>
+        <% if( isLoggedin == 0 ) {%>
+        <script src="/Js/landingbtns.js"></script>
+        <% }else{ %>
+            <script src="/Js/landingbtn.js"></script>
+        <% } %>
+        
+    </body>
+    <div class="footer">
+        &copy; WE-NAARI 2022
+      </div>
+</html>

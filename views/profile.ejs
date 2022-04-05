@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/profileMedia.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="nav-bar">
+            <div class="logo dj a">WE-NAARI</div>
+            <div class="nav-btn ">
+                <ul>
+                    <% if(isLoggedin==0 ) {%>
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        <%}else{%>
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            <%}%>
+                </ul>
+            </div>
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/login">Login</a></li>
+
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                        <%}%>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="backg">
+                <div class="pic" style='background-image: url("<%- user.pImage %>");' >
+                    <label for="changeDP" class="dpbtn">Change</label>
+                    <input type="file" name="" id="changeDP" style="display: none; background-color: coral;">
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="wrapper">
+                    <div class="heading">
+                        <label for="name">Username:</label>
+                        <label for="email">Email:</label>
+                        <label for="mobile">Contact:</label>
+                        <label for="org">Organisation:</label>
+                        <label for="desig">Designation:</label>
+                    </div>
+                    <div class="value">
+
+                        <input type="text" name="" id="name" value="<%- user.name %>" readOnly>
+                        <input type="text" name="" id="email" value="<%- user.email %>" readOnly>
+                        <input type="text" name="" id="mobile" value="<%- user.phone %>" readOnly>
+                        <input type="text" name="" id="org" value="<%- user.orgName %>" readOnly>
+                        <input type="text" name="" id="desig" value="<%- user.Designation %>" readOnly>
+
+
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="edit">Edit</button>
+                    <button class="save">Save</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        &copy; WE-NAARI 2022
+      </div>
+    <script src="/Js/header.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+    <script src="/Js/firebase.js"></script>
+    <script src="/Js/profile.js"></script>
+    <script src="/Js/logo.js"></script>
+</body>
+
+</html>

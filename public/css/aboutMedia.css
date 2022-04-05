@@ -1,0 +1,567 @@
+@media only screen and (orientation:landscape) and (max-width:1025px){
+    .cnt {
+        font-size: 150px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -10px;
+        right: -45px;
+        z-index: -1;
+    }
+    .name {
+        font-size: large;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .div2, .div3, .div4, .div5 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:825px){
+
+    .welcome h1, .welcome h2 {
+        font-size: 41px;
+        font-weight: 600;
+    }
+    .welcome h3 {
+        margin-top: 8px;
+        max-width: 700px;
+    }
+    .welcome{
+        padding-top: 3%;
+    }
+    .content2 h1, .content3 h1, .content4 h1, .content5 h1 {
+        color: #282E49;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .div2, .div3, .div4, .div5 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+    }
+    .name {
+        font-size: large;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2px;
+    }
+    .member img {
+        height: 138px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .team {
+        min-width: 100%;
+        min-height: 600px;
+        margin-top: 9px;
+        padding-top: 13px;
+    }
+    .team .head {
+        font-size: 50px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-bottom: 40px;
+    }
+    .cnt {
+        font-size: 113px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -10px;
+        right: -25px;
+        z-index: -1;
+    }
+    .about{
+        font-size: small;
+    }
+    .member{
+    height: 400px;
+    }
+    .cnt {
+        font-size: 113px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -47px;
+        right: -47px;
+        z-index: -1;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:740px){
+    .member{
+        height: 269px;
+    }
+    .about{
+        font-size: 12px;
+    }
+    .name {
+        font-size: large;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2px;
+    }
+    .member img {
+        height: 138px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .team {
+        min-width: 100%;
+        min-height: 600px;
+        margin-top: 9px;
+        padding-top: 13px;
+    }
+    .team .head {
+        font-size: 50px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-bottom: 65px;
+    }
+    .cnt {
+        font-size: 113px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -10px;
+        right: -25px;
+        z-index: -1;
+    }
+    .div2, .div3, .div4, .div5 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+    }
+    .welcome h1, .welcome h2 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .content2 h1, .content3 h1, .content4 h1, .content5 h1 {
+        color: #282E49;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:733px){
+    .cnt {
+        font-size: 83px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -89px;
+        right: -48px;
+        z-index: -1;
+    }
+    .team .head {
+        font-size: 50px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-bottom: 77px;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:670px){
+    .name {
+        font-size: small;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2px;
+    }
+    .about {
+        font-size: 9px;
+    }
+    .member {
+        height: 311px;
+    }
+    .cnt {
+        font-size: 100px;
+        font-weight: 600;
+        color: gainsboro;
+        position: absolute;
+        top: -57px;
+        right: -41px;
+        z-index: -1;
+    }
+    .welcome h1, .welcome h2 {
+        font-size: 39px;
+        font-weight: 600;
+    }
+    .welcome h3 {
+        margin-top: 8px;
+        max-width: 700px;
+        font-size: 14px;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:670px){
+    .content2 h1, .content3 h1, .content4 h1, .content5 h1 {
+        color: #282E49;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .div2, .div3, .div4, .div5 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 269px;
+        width: 100%;
+    }
+    .member {
+        height: 303px;
+        width: 150px;
+    }
+    .cnt {
+        font-size: 84px;
+        top: -57px;
+        right: -16px;
+    }
+    .team {
+        min-width: 100%;
+        min-height: 553px;
+        margin-top: 9px;
+        padding-top: 13px;
+    }
+    .team .head {
+        font-size: 41px;
+    }   
+}
+@media only screen and (orientation:portrait) and (max-width:1025px){
+    .welcome {
+        min-height: 100vh;
+        height: 100vh;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-top: 5%;
+        background-image: url(/Images/safety.png);
+        background-repeat: no-repeat;
+        background-position: 54% 61%;
+        background-size: 110%;
+        background-color: #E9F5FD;
+        color: #282E49;
+    }
+    .welcome h3 {
+        margin-top: 20px;
+        max-width: 700px;
+        font-size: 30px;
+    }
+    .welcome h1, .welcome h2 {
+        font-size: 80px;
+        font-weight: 600;
+    }
+    .cnt{
+        display: none;
+    }
+    .member {
+        width: 25%;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:770px){
+    .team .wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member {
+        width: 70%;
+        height: 420px;
+        margin-bottom: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid;
+        border-radius: 15px;
+        transition: 1s;
+        position: relative;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:550px){
+    .welcome {
+        min-height: 100vh;
+        height: 100vh;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-top: 5%;
+        background-image: url(/Images/safety.png);
+        background-repeat: no-repeat;
+        background-position: 36% 91%;
+        background-size: 110%;
+        background-color: #E9F5FD;
+        color: #282E49;
+    }
+    .welcome h1, .welcome h2 {
+        font-size: 59px;
+        font-weight: 600;
+    }
+    .div2, .div3, .div4, .div5 {
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+    .content2, .content3, .content4, .content5 {
+        max-width: 62%;
+    }
+    .image2 {
+        background-image: url(/Images/women.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        height: 47%;
+        width: 71%;
+        margin-top: 5%;
+        background-size: cover;
+        /* background-position: center; */
+    }
+    .content2 h1, .content3 h1, .content4 h1, .content5 h1 {
+        color: #282E49;
+        font-size: 27px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 19px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 390px;
+        margin-bottom: 39px;
+    }
+    .image3 {
+        background-image: url(/Images/societyshaming.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 101%;
+        width: 62%;
+    }
+    .image4 {
+        background-image: url(/Images/portrait-style-girl-young-women-fashion-with-plants-1737919-1479023.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 62%;
+        width: 46%;
+        background-position: center;
+    }
+    .div3, .div5{
+        flex-direction: column-reverse;
+    }
+    .team .wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member {
+        width: 70%;
+        height: 420px;
+        margin-bottom: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid;
+        border-radius: 15px;
+        transition: 1s;
+        position: relative;
+    }
+    
+   
+}
+@media only screen and (orientation:portrait) and (max-width:420px){
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 244px;
+        margin-bottom: 39px;
+        text-align: center;
+    }
+    .image5 {
+        background-image: url(/Images/goodToUse.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 73%;
+        width: 55%;
+        background-position: center;
+    }
+    .team .head {
+        font-size: 50px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 38px;
+    }
+    .team {
+        min-width: 100%;
+        min-height: 600px;
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+    .welcome {
+        min-height: 100vh;
+        height: 100vh;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-top: 5%;
+        background-image: url(/Images/safety.png);
+        background-repeat: no-repeat;
+        background-position: 47% 55%;
+        background-size: 110%;
+        background-color: #E9F5FD;
+        color: #282E49;
+    }
+    .welcome h1, .welcome h2 {
+        font-size: 43px;
+        font-weight: 600;
+    }
+    .welcome h3 {
+        margin-top: 20px;
+        max-width: 700px;
+        font-size: 19px;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:325px){
+    .welcome h1, .welcome h2 {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .welcome h3 {
+        margin-top: 11px;
+        max-width: 700px;
+        font-size: 16px;
+    }
+    .content2 p, .content3 p, .content4 p, .content5 p {
+        color: #282E49;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 204px;
+        margin-bottom: 39px;
+        text-align: center;
+    }
+    .image3 {
+        background-image: url(/Images/societyshaming.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+        height: 94%;
+        width: 78%;
+    }
+    .content3 h1{
+        color: #282E49;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 12px;
+    }
+    .image4 {
+        background-image: url(/Images/portrait-style-girl-young-women-fashion-with-plants-1737919-1479023.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 36%;
+        width: 55%;
+        background-position: center;
+    }
+    .image5 {
+        background-image: url(/Images/goodToUse.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 41%;
+        width: 79%;
+        background-position: center;
+    }
+    .team .head {
+        font-size: 39px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 49px;
+    }
+    .team {
+        min-width: 100%;
+        min-height: 600px;
+        margin-top: 25px;
+        padding-top: 0px;
+    }
+    .name {
+        font-size: x-large;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .about {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .member {
+        width: 70%;
+        height: 365px;
+        margin-bottom: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid;
+        border-radius: 15px;
+        transition: 1s;
+        position: relative;
+    }
+}

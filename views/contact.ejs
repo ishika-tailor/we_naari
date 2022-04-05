@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/contactQuery.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <div class="nav-bar">
+            <div class="logo dj a">WE-NAARI</div>
+            <div class="nav-btn ">
+                <ul>
+                    <% if(isLoggedin==0 ) {%>
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/login">Login</a></li>
+
+                        <%}else{%>
+                            <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                            <%}%>
+                </ul>
+            </div>
+            <div class="burger-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-btn-slide ">
+            <ul>
+                <% if(isLoggedin==0 ) {%>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/contact">Contact</a></li>
+                    <li><a class="" href="/login">Login</a></li>
+
+                    <%}else{%>
+                        <li><a class="" href="/stats">Statistics</a></li>
+                            <li><a class="" href="/profile">Profile</a></li>
+                            <% if(isLoggedin == 2) {%>
+                            <li><a class="" href="/list">Authorization List</a></li>
+                            <% } %>
+                            <li><a class="" href="/contact">Contact</a></li>
+                        <li><a class="" href="/user/logout">Logout</a></li>
+
+                        <%}%>
+            </ul>
+        </div>
+
+        <form action="mailto:ishika.tailor2001@gmail.com" method="post" enctype="text/plain">
+            <h1>We'd love to hear from you.</h1>
+            <input type="email" name="Email" placeholder="Email" id="email">
+            <textarea name="Message" id="mess" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send" id="subBtn">
+        </form>
+    </div>
+    <div class="footer">
+        &copy; WE-NAARI 2022
+      </div>
+    <script src="/Js/contact.js"></script>
+    <script src="/Js/logo.js"></script>
+</body>
+
+</html>
