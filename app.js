@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cookieParser = require("cookie-parser"); 
-const userRouter = require('../userRouter.js');
-const viewRouter = require('../ViewRouter.js');
+const userRouter = require('../router/userRouter.js');
+const viewRouter = require('../router/userRouter.js');
 
 app.use(cookieParser());
 app.use( express.json());
