@@ -3,7 +3,7 @@
 </h1>
 
 # Description:
-- We-Naari is a pali word meaning- “Keep an eye”.
+- We-Naari represents Raise the voice. Main aim is “Keep an eye”.
 - Select the location and see the list of top hate speech users on twitter.
 - It gives a word cloud showing the most frequently used words on twitter for the particular location entered.
 - It shows a pie chart showing the share of negative, positive and neutral tweets.
